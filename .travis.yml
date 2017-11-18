@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+    - "6.9.0"
+
+install:
+    - npm install .
+    - npm install -g gulp-cli
+
+script:
+    - gulp lint
+
+notifications:
+    slack:
+        secure: TOZ8Bzp6mJKJi8vslnf3+jexCbNoojvw/nocL8gTW8P+0pEc0R+RKtax1YQRH/haecmjApb2TbMAGyES7Wolwi51f76rpn5VeK0pXPmPBpchC+L0mujTcSORmkAR95tlMD8m9MkfwUpzrekBRlZxdZE8hU+nXCw7hl8J95Fz0ROSJvyxmTRgQDoIpyALf0sOQ6um2XYZsO+7AVt4fdxaeTryUhy7CvAFVPZfEjkx1OZ8b6VHD5pb2YZdbrrTIn48NtEILzzJl8m3RfMoQNSHIs8096XrS/EDacPQZ2or7PUHtga0vFPOWW1Y8ZPuoPkUIcgTF8tefIUz8tZOu0yg9xwPNrHEhSxtq7JE2bEwuKk/5hyStRH6xdbzr17lp6ZwwB8L2Yfa803wYKO/VgoZD8cmxfcvZFA8u3cE3DsA+fpkLkAWbWfcF3i5rVqWnNTlxhzPRu17HYfpl0DPQwRpfeR/LySJdFNWZlAMzunCPEMWznYeZod4mrWuxnFW8wjhoAJ6M+oastrk63PXTd4cNFEq+Wrgf/kDvQPKvqyr2Tgc12i07bzGrnwTaOvaeUJFeo+fDlyEV7JZGDmauuIBb29XTLcCDbiNNKKmAL2coEFqmKYoCApqJBYKyIRDU27yNO+vWisQ/rHlihduhEXivvEH6fYSbNlDQabb4m0lQ3k=
