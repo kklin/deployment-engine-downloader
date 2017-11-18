@@ -1,0 +1,11 @@
+{
+    "extends": "airbnb-base",
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "rules": {
+      "no-console": "off",
+      "no-shadow": ["error", { "allow": ["_"] }],
+      "no-use-before-define": ["error", {"functions": false, "classes": false}]
+    }
+}
