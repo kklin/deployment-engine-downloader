@@ -74,14 +74,6 @@ function getKeldaVersions() {
           return;
         }
 
-        // XXX: The kube version tracks the kube-dev branch of the Kelda
-        // repository. It is only going to be used while we run CI against the
-        // kube-dev branch, so the following case can be removed once the
-        // branch is merged, and the version is deleted.
-        if (version === 'kube') {
-          return;
-        }
-
         if (!semver.valid(version)) {
           reject(new Error(`version ${version} is invalid`));
           return;
